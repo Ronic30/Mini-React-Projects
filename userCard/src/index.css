@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    width: 100%;
+    height: 100%;    
+    background-color: #111;
+
+}
+
+
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top img{
+    width: 30px;
+}
+
+.center .title{
+    font-weight: 600;    
+    font-size: 158x;
+
+}
+
+.center .role{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.center .cat{
+    display: flex;
+    gap: 10px;
+}
+
+.cat1{
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 500;
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom .sal{
+    font-weight: 600;
+}
+
+.bottom .loc{
+    font-size: 13px;
+}
+
+.bottom button{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    width: var(--space-xl)
+}
