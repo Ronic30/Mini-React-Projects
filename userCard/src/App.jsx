@@ -97,9 +97,11 @@ export default function App (){
 
   return(
     <div className='parent'>
-      {companies.map(function(ele){
+      {companies.map(function(ele, index){
 
-        return <Card logo = {ele.logo} companyName = {ele.name} companyRole = {ele.role} companyCat1 = {ele.cat1} companyCat2 = {ele.cat2}companyPay = {ele.payPerHour} companyLoc = {ele.location}/>
+        return <div key={index}>
+          <Card logo = {ele.logo} companyName = {ele.name} companyRole = {ele.role} companyCat1 = {ele.cat1} companyCat2 = {ele.cat2}companyPay = {ele.payPerHour} companyLoc = {ele.location}/>
+        </div>
 
       })}
     </div>
